@@ -1,0 +1,19 @@
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>Login Application </title>
+    </h:head>
+    <h:body>
+       <h3>Login Application in JSF 2</h3>
+       
+		<h:form >
+		UserName:
+		<h:inputText value="#{user.username}" id="u"  /> <br/><br/>
+		Password:
+		<h:inputSecret value="#{user.password}" id="p" /> <br/><br/>
+			
+			<h:commandButton value="Login" action="#{CustomerDAO.loginCheck(u,p)}"></h:commandButton>
+		</h:form>
+    </h:body>
+</html> 

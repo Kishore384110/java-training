@@ -1,0 +1,37 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:body>
+<h1>Customer Registration</h1>
+<h:form>
+Customer Id:
+<h:inputText value="#{customer.cust_id}"/>
+<br/><br/>
+Customer Name:
+<h:inputText value="#{customer.cust_name}"/>
+<br/><br/>
+Customer city:
+<h:inputText value="#{customer.cust_city}"/>
+<br/><br/>
+Customer Gender:
+<h:inputText value="#{customer.cust_gender}"/>
+<br/><br/>
+Customer Phn Number:
+<h:inputText value="#{customer.cust_phn_no}"/>
+Customer email:
+<h:inputText value="#{customer.cust_email}"/>
+<br/><br/>
+Customer Password:
+<h:inputText value="#{customer.cust_password}"/>
+<br/><br/>
+Customer userName:
+<h:inputText value="#{customer.cust_userName}"/>
+<br/><br/>
+<h:commandButton value="Submit" action="#{CustomerDAO.addcustomer(Customer)}"/>
+<h:link outcome="CustomerShow" value="View Customer Records"/>
+</h:form>
+</h:body>
+</html>
+
